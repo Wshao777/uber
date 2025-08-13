@@ -1,3 +1,137 @@
+收到。你這份「專案銀行電匯」資料我幫你整理成國際電匯標準版（中英雙語），同時把明顯風險點直接標註好，照這份填就能用。
+
+✅ 標準電匯資訊（英／中）
+
+Beneficiary Bank（收款銀行）
+
+Bank Name：Chunghwa Post Co., Ltd.
+
+SWIFT/BIC：CHPYTWTP
+
+Bank Address：Taichung Minquan Road Post Office, Taichung City, Taiwan (R.O.C.)
+（若有分局門牌請補上；沒有也可用此格式）
+
+
+Beneficiary（收款人）
+
+Account Name (as in passport)：Chiclin Hus
+（務必與護照英文完全一致，含空格／大小寫；若護照拼寫不同，請改成護照上的拼法）
+
+Account Number：00210091602429（中華郵政 14 碼存簿帳）
+
+Phone：+886-918-058-587
+
+Address：No. 55, Ln. 214, Fushang Rd., Xitun Dist., Taichung City 407, Taiwan (R.O.C.)
+（你原文寫「Fushang Lane, Lane 214」重複“Lane”；且郵遞區號寫成700（台南），與台中不符。台中西屯常用407；若是中區則400。請以實際戶籍或聯絡地址為準）
+
+
+Optional / For Bank use（部分銀行會要求）
+
+Bank Code（台灣本地用）：700（中華郵政銀行代碼）
+
+Purpose/Reference：Project Wire / Professional services（或依對方要求填寫）
+
+
+
+---
+
+📌 你原稿中的風險與修正
+
+1. 郵遞區號「700」不屬於台中
+　700 是台南市；台中常見為 400（中區）、403（西區）、404（北區）、407（西屯）…→ 我先依你描述推為 407（西屯）。若實際在其他區，請把「Xitun Dist., 407」換成正確區名＋郵遞區號。
+
+
+2. 地址英譯結構
+　避免「Lane 重複」：建議採 No. 55, Ln. 214, Fushang Rd., District, City PostalCode, Taiwan (R.O.C.)
+　（Road=Rd., Street=St., Lane=Ln., Alley=Aly.）
+
+
+3. 收款人英文戶名
+　必須與護照一致。你寫 Chiclin Hus 可能是暫填；請核對護照頁或 MRZ（護照底部兩行字母）後，逐字填入。
+
+
+4. IBAN 非台灣制
+　台灣沒有 IBAN。對方若硬要 IBAN，回答「Taiwan does not use IBAN; please use SWIFT + account」。
+
+
+
+
+---
+
+🧾 一頁式中英對照（可直接貼給匯款行）
+
+收款銀行（Bank）
+
+英文名稱：Chunghwa Post Co., Ltd.
+
+SWIFT/BIC：CHPYTWTP
+
+銀行地址：Taichung Minquan Road Post Office, Taichung City, Taiwan (R.O.C.)
+
+
+收款人（Beneficiary）
+
+英文戶名（同護照）：Chiclin Hus
+
+帳號（14 碼）：00210091602429
+
+聯絡電話：+886-918-058-587
+
+地址（英文）：No. 55, Ln. 214, Fushang Rd., Xitun Dist., Taichung City 407, Taiwan (R.O.C.)
+
+
+備註（選填）
+
+Bank Code（台灣本地）：700
+
+匯款用途 / 參考：Project Wire / Professional services
+
+
+
+---
+
+🧠 快速檢查清單（送件前 1 分鐘）
+
+[ ] 戶名與護照英文 完全一致（含空格、姓氏順序）
+
+[ ] 地址區名＋郵遞區號正確（台中多為 400/403/404/407 等，不是 700）
+
+[ ] SWIFT CHPYTWTP、Bank 名稱 Chunghwa Post Co., Ltd.
+
+[ ] 若對方系統問 IBAN → 回覆「Taiwan has no IBAN」
+
+[ ] 匯款用途已填（可減少合規追問/延誤）
+
+
+
+---
+
+🧩 程式／表單用 JSON（可貼系統）
+
+{
+  "bank": {
+    "name_en": "Chunghwa Post Co., Ltd.",
+    "swift": "CHPYTWTP",
+    "address_en": "Taichung Minquan Road Post Office, Taichung City, Taiwan (R.O.C.)",
+    "bank_code_tw": "700"
+  },
+  "beneficiary": {
+    "account_name_en": "Chiclin Hus",
+    "account_number": "00210091602429",
+    "phone_e164": "+886918058587",
+    "address_en": "No. 55, Ln. 214, Fushang Rd., Xitun Dist., Taichung City 407, Taiwan (R.O.C.)"
+  },
+  "remittance": {
+    "purpose": "Project Wire / Professional services",
+    "notes": "Taiwan has no IBAN; please use SWIFT + account."
+  }
+}
+
+
+---
+
+需要我把這份電匯資料卡做成可打印的 PDF 或產出一份英語郵件模板，讓對方會計/銀行直接照抄嗎？你說要 PDF 或 Email，我立刻生出來。
+公司股份100%回收
 <div align="center">
   <br />
     <a href="https://youtu.be/kmy_YNhl0mw" target="_blank">
