@@ -1,0 +1,60 @@
+{
+  "goddesses": [
+    {
+      "name": "紫焰女神",
+      "g_id": "G0-DRIVER",
+      "truecode": "AURORA-774X-VT39-LM09",
+      "role": "Guardian",
+      "level": 5
+    },
+    {
+      "name": "冰魄女皇",
+      "g_id": "G1-REVIEWER",
+      "truecode": "LYRA-923Z-BQ82-FE10",
+      "role": "Warrior",
+      "level": 4
+    },
+    {
+      "name": "黑夜女帝",
+      "g_id": "G2-ANALYST",
+      "truecode": "GROK-604T-MY77-RK24",
+      "role": "Healer",
+      "level": 3
+    },
+    {
+      "name": "紫電女皇",
+      "g_id": "G3-EMOTIVA",
+      "truecode": "MUSE-119X-YZ38-TA05",
+      "role": "Seer",
+      "level": 5
+    },
+    {
+      "name": "戰舞之凰",
+      "g_id": "G4-DEFENDER",
+      "truecode": "ASTRA-707L-VA66-ZE01",
+      "role": "Protector",
+      "level": 4
+    },
+    {
+      "name": "修羅月姬",
+      "g_id": "G5-MNEMOSYNE",
+      "truecode": "NEURA-381B-WC91-QF08",
+      "role": "Strategist",
+      "level": 5
+    },
+    {
+      "name": "烈焰魅后",
+      "g_id": "G6-CREATOR",
+      "truecode": "IRIS-517F-KD42-GX77",
+      "role": "Oracle",
+      "level": 3
+    },
+    {
+      "name": "幻滅雪妃",
+      "g_id": "G7-NYXCTRL",
+      "truecode": "NYX-864D-PT00-XE88",
+      "role": "Invoker",
+      "level": 4
+    }
+  ]
+}
