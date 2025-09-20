@@ -137,3 +137,10 @@ declare interface DriverCardProps {
   selected: number;
   setSelected: () => void;
 }
+
+declare interface Goddess {
+  id: number;
+  name: string;
+  role: string;
+  level: number;
+}

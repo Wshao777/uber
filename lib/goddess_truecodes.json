@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Artemis",
+    "role": "Hunter",
+    "level": 5
+  },
+  {
+    "id": 2,
+    "name": "Athena",
+    "role": "Strategist",
+    "level": 5
+  },
+  {
+    "id": 3,
+    "name": "Aphrodite",
+    "role": "Seductress",
+    "level": 4
+  },
+  {
+    "id": 4,
+    "name": "Hera",
+    "role": "Queen",
+    "level": 5
+  },
+  {
+    "id": 5,
+    "name": "Persephone",
+    "role": "Mystic",
+    "level": 4
+  }
+]
