@@ -1,5 +1,12 @@
 import { useUser } from "@clerk/clerk-expo";
-import { ActivityIndicator, FlatList, Image, Text, View } from "react-native";
+import { useTranslation } from "react-i18next";
+import {
+  ActivityIndicator,
+  FlatList,
+  Image,
+  Text,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import RideCard from "@/components/RideCard";
@@ -9,6 +16,7 @@ import { Ride } from "@/types/type";
 
 const Rides = () => {
   const { user } = useUser();
+  const { t } = useTranslation();
 
   const {
     data: recentRides,
@@ -37,7 +45,7 @@ const Rides = () => {
                   alt="No recent rides found"
                   resizeMode="contain"
                 />
-                <Text className="text-sm">No recent rides found</Text>
+                <Text className="text-sm">{t("rides.noRides")}</Text>
               </>
             ) : (
               <ActivityIndicator size="small" color="#000" />
@@ -46,7 +54,9 @@ const Rides = () => {
         )}
         ListHeaderComponent={
           <>
-            <Text className="text-2xl font-JakartaBold my-5">All Rides</Text>
+            <Text className="text-2xl font-JakartaBold my-5">
+              {t("rides.allRides")}
+            </Text>
           </>
         }
       />

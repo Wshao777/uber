@@ -1,0 +1,91 @@
+{
+  "welcome": {
+    "skip": "跳过",
+    "getStarted": "开始",
+    "next": "下一个"
+  },
+  "onboarding": {
+    "slide1": {
+      "title": "完美的旅程，近在咫尺！",
+      "description": "您的旅程始于 Ryde。轻松找到您理想的座驾。"
+    },
+    "slide2": {
+      "title": "Ryde 在手，好车拥有",
+      "description": "通过 Ryde 发现寻找完美座驾的便利"
+    },
+    "slide3": {
+      "title": "您的座驾，您做主。我们出发吧！",
+      "description": "输入您的目的地，坐好，剩下的交给我们。"
+    }
+  },
+  "notFound": {
+    "title": "此屏幕不存在。",
+    "goHome": "去主屏幕！",
+    "oops": "哎呀！"
+  },
+  "signIn": {
+    "signUp": "注册",
+    "welcome": "欢迎 👋",
+    "emailLabel": "电子邮件",
+    "emailPlaceholder": "输入电子邮件",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "输入密码",
+    "button": "登录",
+    "noAccount": "没有帐户？"
+  },
+  "signUp": {
+    "logIn": "登录",
+    "title": "创建您的帐户",
+    "nameLabel": "名称",
+    "namePlaceholder": "输入名称",
+    "emailLabel": "电子邮件",
+    "emailPlaceholder": "输入电子邮件",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "输入密码",
+    "button": "注册",
+    "haveAccount": "已经有帐户了？",
+    "verificationTitle": "验证",
+    "verificationSubtitle": "我们已将验证码发送至 {{email}}。",
+    "codeLabel": "代码",
+    "codePlaceholder": "12345",
+    "verifyButton": "验证电子邮件",
+    "verifiedTitle": "已验证",
+    "verifiedSubtitle": "您已成功验证您的帐户。",
+    "browseButton": "浏览主页"
+  },
+  "bookRide": {
+    "price": "乘车价格",
+    "pickup": "接送时间",
+    "seats": "汽车座椅",
+    "title": "预订行程",
+    "info": "行程信息"
+  },
+  "rides": {
+    "noRides": "未找到最近的行程",
+    "allRides": "所有行程"
+  },
+  "profile": {
+    "title": "我的个人资料",
+    "firstName": "姓",
+    "lastName": "名",
+    "email": "电子邮件",
+    "phone": "电话",
+    "notFound": "未找到"
+  },
+  "chat": {
+    "title": "聊天",
+    "noMessages": "尚无讯息",
+    "startConversation": "与您的朋友和家人开始对话"
+  },
+  "home": {
+    "welcome": "欢迎 {{firstName}}👋",
+    "currentLocation": "您当前的位置",
+    "recentRides": "最近的行程"
+  },
+  "findRide": {
+    "from": "从",
+    "to": "到",
+    "title": "行程",
+    "button": "立即查找"
+  }
+}

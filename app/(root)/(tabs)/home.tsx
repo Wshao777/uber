@@ -3,6 +3,7 @@ import { useAuth } from "@clerk/clerk-expo";
 import * as Location from "expo-location";
 import { router } from "expo-router";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Text,
   View,
@@ -24,6 +25,7 @@ import { Ride } from "@/types/type";
 const Home = () => {
   const { user } = useUser();
   const { signOut } = useAuth();
+  const { t } = useTranslation();
 
   const { setUserLocation, setDestinationLocation } = useLocationStore();
 
@@ -94,7 +96,7 @@ const Home = () => {
                   alt="No recent rides found"
                   resizeMode="contain"
                 />
-                <Text className="text-sm">No recent rides found</Text>
+                <Text className="text-sm">{t("rides.noRides")}</Text>
               </>
             ) : (
               <ActivityIndicator size="small" color="#000" />
@@ -105,7 +107,7 @@ const Home = () => {
           <>
             <View className="flex flex-row items-center justify-between my-5">
               <Text className="text-2xl font-JakartaExtraBold">
-                Welcome {user?.firstName}👋
+                {t("home.welcome", { firstName: user?.firstName })}
               </Text>
               <TouchableOpacity
                 onPress={handleSignOut}
@@ -123,7 +125,7 @@ const Home = () => {
 
             <>
               <Text className="text-xl font-JakartaBold mt-5 mb-3">
-                Your current location
+                {t("home.currentLocation")}
               </Text>
               <View className="flex flex-row items-center bg-transparent h-[300px]">
                 <Map />
@@ -131,7 +133,7 @@ const Home = () => {
             </>
 
             <Text className="text-xl font-JakartaBold mt-5 mb-3">
-              Recent Rides
+              {t("home.recentRides")}
             </Text>
           </>
         }

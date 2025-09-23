@@ -1,4 +1,5 @@
 import { router } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { Text, View } from "react-native";
 
 import CustomButton from "@/components/CustomButton";
@@ -14,11 +15,14 @@ const FindRide = () => {
     setDestinationLocation,
     setUserLocation,
   } = useLocationStore();
+  const { t } = useTranslation();
 
   return (
-    <RideLayout title="Ride">
+    <RideLayout title={t("findRide.title")}>
       <View className="my-3">
-        <Text className="text-lg font-JakartaSemiBold mb-3">From</Text>
+        <Text className="text-lg font-JakartaSemiBold mb-3">
+          {t("findRide.from")}
+        </Text>
 
         <GoogleTextInput
           icon={icons.target}
@@ -30,7 +34,9 @@ const FindRide = () => {
       </View>
 
       <View className="my-3">
-        <Text className="text-lg font-JakartaSemiBold mb-3">To</Text>
+        <Text className="text-lg font-JakartaSemiBold mb-3">
+          {t("findRide.to")}
+        </Text>
 
         <GoogleTextInput
           icon={icons.map}
@@ -42,7 +48,7 @@ const FindRide = () => {
       </View>
 
       <CustomButton
-        title="Find Now"
+        title={t("findRide.button")}
         onPress={() => router.push(`/(root)/confirm-ride`)}
         className="mt-5"
       />

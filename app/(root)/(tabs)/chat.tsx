@@ -1,13 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { Image, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { images } from "@/constants";
 
 const Chat = () => {
+  const { t } = useTranslation();
   return (
     <SafeAreaView className="flex-1 bg-white p-5">
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-        <Text className="text-2xl font-JakartaBold">Chat</Text>
+        <Text className="text-2xl font-JakartaBold">{t("chat.title")}</Text>
         <View className="flex-1 h-fit flex justify-center items-center">
           <Image
             source={images.message}
@@ -16,10 +18,10 @@ const Chat = () => {
             resizeMode="contain"
           />
           <Text className="text-3xl font-JakartaBold mt-3">
-            No Messages Yet
+            {t("chat.noMessages")}
           </Text>
           <Text className="text-base mt-2 text-center px-7">
-            Start a conversation with your friends and family
+            {t("chat.startConversation")}
           </Text>
         </View>
       </ScrollView>

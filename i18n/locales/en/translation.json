@@ -1,0 +1,91 @@
+{
+  "welcome": {
+    "skip": "Skip",
+    "getStarted": "Get Started",
+    "next": "Next"
+  },
+  "onboarding": {
+    "slide1": {
+      "title": "The perfect ride is just a tap away!",
+      "description": "Your journey begins with Ryde. Find your ideal ride effortlessly."
+    },
+    "slide2": {
+      "title": "Best car in your hands with Ryde",
+      "description": "Discover the convenience of finding your perfect ride with Ryde"
+    },
+    "slide3": {
+      "title": "Your ride, your way. Let's go!",
+      "description": "Enter your destination, sit back, and let us take care of the rest."
+    }
+  },
+  "notFound": {
+    "title": "This screen doesn't exist.",
+    "goHome": "Go to home screen!",
+    "oops": "Oops!"
+  },
+  "signIn": {
+    "signUp": "Sign Up",
+    "welcome": "Welcome 👋",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter password",
+    "button": "Sign In",
+    "noAccount": "Don't have an account? "
+  },
+  "signUp": {
+    "logIn": "Log In",
+    "title": "Create Your Account",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter password",
+    "button": "Sign Up",
+    "haveAccount": "Already have an account? ",
+    "verificationTitle": "Verification",
+    "verificationSubtitle": "We've sent a verification code to {{email}}.",
+    "codeLabel": "Code",
+    "codePlaceholder": "12345",
+    "verifyButton": "Verify Email",
+    "verifiedTitle": "Verified",
+    "verifiedSubtitle": "You have successfully verified your account.",
+    "browseButton": "Browse Home"
+  },
+  "bookRide": {
+    "price": "Ride Price",
+    "pickup": "Pickup Time",
+    "seats": "Car Seats",
+    "title": "Book Ride",
+    "info": "Ride Information"
+  },
+  "rides": {
+    "noRides": "No recent rides found",
+    "allRides": "All Rides"
+  },
+  "profile": {
+    "title": "My profile",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "notFound": "Not Found"
+  },
+  "chat": {
+    "title": "Chat",
+    "noMessages": "No Messages Yet",
+    "startConversation": "Start a conversation with your friends and family"
+  },
+  "home": {
+    "welcome": "Welcome {{firstName}}👋",
+    "currentLocation": "Your current location",
+    "recentRides": "Recent Rides"
+  },
+  "findRide": {
+    "from": "From",
+    "to": "To",
+    "title": "Ride",
+    "button": "Find Now"
+  }
+}

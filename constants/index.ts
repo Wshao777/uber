@@ -71,30 +71,23 @@ export const icons = {
   to,
 };
 
-export const onboarding = [
+export const getOnboardingData = (t: (key: string) => string) => [
   {
     id: 1,
-    title: "The perfect ride is just a tap away!",
-    description:
-      "Your journey begins with Ryde. Find your ideal ride effortlessly.",
+    title: t("onboarding.slide1.title"),
+    description: t("onboarding.slide1.description"),
     image: images.onboarding1,
   },
   {
     id: 2,
-    title: "Best car in your hands with Ryde",
-    description:
-      "Discover the convenience of finding your perfect ride with Ryde",
+    title: t("onboarding.slide2.title"),
+    description: t("onboarding.slide2.description"),
     image: images.onboarding2,
   },
   {
     id: 3,
-    title: "Your ride, your way. Let's go!",
-    description:
-      "Enter your destination, sit back, and let us take care of the rest.",
+    title: t("onboarding.slide3.title"),
+    description: t("onboarding.slide3.description"),
     image: images.onboarding3,
   },
 ];
-
-export const data = {
-  onboarding,
-};

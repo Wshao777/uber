@@ -1,6 +1,7 @@
 import { useSignIn } from "@clerk/clerk-expo";
 import { Link, router } from "expo-router";
 import { useCallback, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Alert, Image, ScrollView, Text, View } from "react-native";
 
 import CustomButton from "@/components/CustomButton";
@@ -10,6 +11,7 @@ import { icons, images } from "@/constants";
 
 const SignIn = () => {
   const { signIn, setActive, isLoaded } = useSignIn();
+  const { t } = useTranslation();
 
   const [form, setForm] = useState({
     email: "",
@@ -45,14 +47,14 @@ const SignIn = () => {
         <View className="relative w-full h-[250px]">
           <Image source={images.signUpCar} className="z-0 w-full h-[250px]" />
           <Text className="text-2xl text-black font-JakartaSemiBold absolute bottom-5 left-5">
-            Welcome 👋
+            {t("signIn.welcome")}
           </Text>
         </View>
 
         <View className="p-5">
           <InputField
-            label="Email"
-            placeholder="Enter email"
+            label={t("signIn.emailLabel")}
+            placeholder={t("signIn.emailPlaceholder")}
             icon={icons.email}
             textContentType="emailAddress"
             value={form.email}
@@ -60,8 +62,8 @@ const SignIn = () => {
           />
 
           <InputField
-            label="Password"
-            placeholder="Enter password"
+            label={t("signIn.passwordLabel")}
+            placeholder={t("signIn.passwordPlaceholder")}
             icon={icons.lock}
             secureTextEntry={true}
             textContentType="password"
@@ -70,7 +72,7 @@ const SignIn = () => {
           />
 
           <CustomButton
-            title="Sign In"
+            title={t("signIn.button")}
             onPress={onSignInPress}
             className="mt-6"
           />
@@ -81,8 +83,8 @@ const SignIn = () => {
             href="/sign-up"
             className="text-lg text-center text-general-200 mt-10"
           >
-            Don't have an account?{" "}
-            <Text className="text-primary-500">Sign Up</Text>
+            {t("signIn.noAccount")}
+            <Text className="text-primary-500">{t("signIn.signUp")}</Text>
           </Link>
         </View>
       </View>

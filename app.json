@@ -32,7 +32,8 @@
         {
           "origin": "https://uber.dev/"
         }
-      ]
+      ],
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true
