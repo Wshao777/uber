@@ -1,0 +1,172 @@
+[
+  {
+    "unit_id": "UNIT-00001",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Strike",
+    "ai_rank": "Operator",
+    "status": "Engaged",
+    "priority": "High",
+    "details": ["四大皇", "冰魄女皇", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00002",
+    "domain": "Air",
+    "location": "台中逢甲",
+    "ai_role": "Recon",
+    "ai_rank": "Operator",
+    "status": "Retired",
+    "priority": "High",
+    "details": ["四大皇", "黑夜女帝", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00003",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Strike",
+    "ai_rank": "Commander",
+    "status": "Active",
+    "priority": "Medium",
+    "details": ["四大皇", "紫電女皇", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00004",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Recon",
+    "ai_rank": "Analyst",
+    "status": "Active",
+    "priority": "Medium",
+    "details": ["八大將", "戰舞之凰", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00005",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Strike",
+    "ai_rank": "Operator",
+    "status": "Standby",
+    "priority": "Medium",
+    "details": ["八大將", "修羅月姬", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00006",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Defense",
+    "ai_rank": "Operator",
+    "status": "Engaged",
+    "priority": "Medium",
+    "details": ["八大將", "烈焰魅后", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00007",
+    "domain": "Air",
+    "location": "台中逢甲",
+    "ai_role": "Recon",
+    "ai_rank": "Analyst",
+    "status": "Standby",
+    "priority": "Low",
+    "details": ["八大將", "幻滅雪妃", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00008",
+    "domain": "Air",
+    "location": "台中逢甲",
+    "ai_role": "Logistics",
+    "ai_rank": "Analyst",
+    "status": "Engaged",
+    "priority": "Medium",
+    "details": ["八大將", "幽冥冥后", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00009",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Recon",
+    "ai_rank": "Commander",
+    "status": "Active",
+    "priority": "Medium",
+    "details": ["八大將", "狂歌戰姬", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00010",
+    "domain": "Land",
+    "location": "台中逢甲",
+    "ai_role": "Strike",
+    "ai_rank": "Strategist",
+    "status": "Standby",
+    "priority": "Low",
+    "details": ["八大將", "魔瞳聖女", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00011",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Logistics",
+    "ai_rank": "Operator",
+    "status": "Engaged",
+    "priority": "Low",
+    "details": ["八大將", "絕影天妃", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00012",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Strike",
+    "ai_rank": "Operator",
+    "status": "Engaged",
+    "priority": "High",
+    "details": ["六聖姬", "血影羅剎", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00013",
+    "domain": "Land",
+    "location": "台中逢甲",
+    "ai_role": "Strike",
+    "ai_rank": "Commander",
+    "status": "Engaged",
+    "priority": "High",
+    "details": ["六聖姬", "星辰女武神", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00014",
+    "domain": "Air",
+    "location": "台中逢甲",
+    "ai_role": "Recon",
+    "ai_rank": "Operator",
+    "status": "Engaged",
+    "priority": "High",
+    "details": ["六聖姬", "毒蓮修羅", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00015",
+    "domain": "Air",
+    "location": "台中逢甲",
+    "ai_role": "Strike",
+    "ai_rank": "Commander",
+    "status": "Retired",
+    "priority": "Low",
+    "details": ["六聖姬", "白骨戰凰", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00016",
+    "domain": "Sea",
+    "location": "台中逢甲",
+    "ai_role": "Strike",
+    "ai_rank": "Strategist",
+    "status": "Active",
+    "priority": "Low",
+    "details": ["六聖姬", "修羅血姬", "lightinggithub@gmail.com"]
+  },
+  {
+    "unit_id": "UNIT-00017",
+    "domain": "Land",
+    "location": "台中逢甲",
+    "ai_role": "Recon",
+    "ai_rank": "Operator",
+    "status": "Active",
+    "priority": "Medium",
+    "details": ["六聖姬", "雷霆聖姬", "lightinggithub@gmail.com"]
+  }
+]

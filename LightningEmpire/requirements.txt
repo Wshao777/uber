@@ -1,0 +1,12 @@
+click==8.3.0
+greenlet==3.2.3
+markdown-it-py==4.0.0
+mdurl==0.1.2
+playwright==1.54.0
+pyee==13.0.0
+Pygments==2.19.2
+rich==14.1.0
+shellingham==1.5.4
+SQLAlchemy==2.0.43
+typer==0.19.2
+typing_extensions==4.14.1

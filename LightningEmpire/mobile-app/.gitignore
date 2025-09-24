@@ -21,3 +21,7 @@ expo-env.d.ts
 
 # env
 .env
+
+# Custom config files
+# Added to protect sensitive credentials and configurations
+telegram_bots.conf
