@@ -1,1 +1,45 @@
+name: Python Script CI
 
+on:
+  push:
+    branches:
+      - main
+      - 'feat/**'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install selenium python-telegram-bot
+
+    - name: Create dummy config.json for syntax check
+      run: |
+        echo '{
+          "uber_url": "https://example.com",
+          "uber_accounts": [{"email": "test@example.com", "password": "password"}],
+          "jkopay_file": "dummy.csv",
+          "telegram": {"token": "dummy_token", "chat_id": "dummy_chat_id"},
+          "payment_info": {"account": "dummy_account", "link": "dummy_link"}
+        }' > config.json
+
+    - name: Create dummy bank file
+      run: |
+        echo "日期,金額" > dummy.csv
+        echo "2023-10-27,100.00" >> dummy.csv
+
+    - name: Check Python script syntax
+      run: python -m py_compile main.py
