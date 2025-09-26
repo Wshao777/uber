@@ -1,0 +1,20 @@
+# Core application dependencies
+Flask
+Flask-Cors
+
+# Google API
+gspread
+oauth2client
+
+# Data handling and Excel
+pandas
+openpyxl
+
+# Cryptography for .env handling
+cryptography
+
+# HTTP requests
+requests
+
+# Telegram notifications
+python-telegram-bot
