@@ -1,9 +1,0 @@
-name: Auto Deploy
-on: [push]
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Deploy to Render
-        run: curl -X POST https://api.render.com/deploy/srv-{{ .ServiceID }}?key={{ .ApiKey }}
