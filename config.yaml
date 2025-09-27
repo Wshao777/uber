@@ -1,0 +1,37 @@
+# Configuration for the Jules Dispatcher System
+
+# Active markets for the Fengjia Danshui A-gei Alliance
+active_markets:
+  fengjia:
+    enabled: true
+    location: "Taichung, Fengjia Night Market"
+    vendors:
+      - "繼光香香雞"
+      - "北回木瓜牛奶"
+      - "逢甲民有市場"
+    # A* pathfinding specific settings can be stored here
+    pathfinding:
+      traffic_hotspots:
+        - "Fuxing Parking Lot"
+        - "Wenhua Road near the university"
+
+  danshui_agei:
+    enabled: true
+    location: "New Taipei City, Danshui District"
+    vendors:
+      - "文化阿給"
+      - "老牌阿給"
+      - "三姐妹阿給"
+    pathfinding:
+      traffic_hotspots:
+        - "Danshui Old Street on weekends"
+
+# General settings for the dispatcher
+general_settings:
+  log_level: "INFO"
+  # In a real application, these should be stored securely in environment variables, not here.
+  # This is for configuration reference only.
+  telegram_notifications:
+    enabled: true
+    bot_token_env: "TELEGRAM_BOT_TOKEN"
+    chat_id_env: "TELEGRAM_CHAT_ID"
