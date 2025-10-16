@@ -1,0 +1,29 @@
+name: Auto Email Summary
+
+on:
+  schedule:
+    - cron: '0 1 * * 1'  # 每週一 UTC 凌晨 1 點 (對應亞洲時區的早上)
+  push:
+    branches: [ main, master ] # 監控主要分支
+
+jobs:
+  generate-and-send:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run email generation script
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        EMAIL_USER: ${{ secrets.EMAIL_USER }}
+        EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+      run: python scripts/generate_email.py
