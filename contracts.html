@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>AI决策定金协议生成器</title>
+    <script>
+        function generateContract() {
+            const clientName = document.getElementById('clientName').value;
+            const product = document.getElementById('product').value;
+            const amount = document.getElementById('amount').value;
+            
+            const contract = `
+                ⚡ 闪电帝国科技股份有限公司 - AI决策定金协议 ⚡
+                
+                甲方（客户）：${clientName}
+                乙方（授权方）：闪电帝国科技股份有限公司
+                
+                授权产品：${product === 'ai-system' ? 'AI决策系统企业授权' : 
+                          product === 'security' ? '堡垒链包安全解决方案' : '主权层技术授权'}
+                
+                定金金额：新台币 ${amount} 元整
+                付款账户：联邦银行(803) 061-50-7123481
+                户名：闪电帝国科技股份有限公司 / 徐志曆
+                
+                条款摘要：
+                1. 本定金为项目启动与资源独占定金
+                2. 支付后获得30天专属AI架构师咨询
+                3. 项目进入"闪电通道"优先队列
+                4. 获得《技术资产收益共享协议v2.0》预览版
+                
+                签署日期：${new Date().toLocaleDateString('zh-TW')}
+                
+                ⚠️ 重要：付款后请将截图发送至 lightinggithub@gmail.com
+                我们将在1小时内发送正式合同与授权码。
+            `;
+            
+            document.getElementById('contractOutput').innerText = contract;
+            document.getElementById('downloadBtn').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h2>⚡ AI决策定金协议生成器</h2>
+    <form onsubmit="event.preventDefault(); generateContract();">
+        <input type="text" id="clientName" placeholder="客户公司/姓名" required>
+        <select id="product" required>
+            <option value="ai-system">AI决策系统授权 (NT$ 250,000起)</option>
+            <option value="security">堡垒链包安全方案 (NT$ 299,000起)</option>
+            <option value="sovereign">主权层技术授权 (定制报价)</option>
+        </select>
+        <input type="number" id="amount" placeholder="定金金额 (TWD)" required>
+        <button type="submit">生成定金协议</button>
+    </form>
+    <pre id="contractOutput" style="background: #f5f5f5; padding: 1rem; margin: 1rem 0;"></pre>
+    <button id="downloadBtn" style="display:none;" onclick="downloadContract()">下载PDF版本</button>
+</body>
+</html>
