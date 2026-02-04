@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>闪电帝国技术资产仪表板</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>📊 技术资产估值仪表板</h1>
+    <canvas id="techChart" width="400" height="200"></canvas>
+    <script>
+        new Chart(document.getElementById('techChart'), {
+            type: 'bar',
+            data: {
+                labels: ['AI/ML项目', '系统工具', '区块链/金融', '前端/Web', '其他'],
+                datasets: [{
+                    label: '代码行数（千行）',
+                    data: [750, 320, 240, 150, 69],
+                    backgroundColor: ['#0066ff', '#00ffaa', '#ffaa00', '#aa00ff', '#ff0066']
+                }]
+            },
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: '闪电帝国技术资产分布 - 总计1,834,800行代码'
+                    }
+                }
+            }
+        });
+    </script>
+    
+    <div style="margin-top: 3rem;">
+        <h3>💰 即时估值计算器</h3>
+        <p>基于 1,529,000 行核心代码 × 行业估值系数</p>
+        <p>保守估值: <strong>NT$ 12,843,600</strong></p>
+        <p>合理估值: <strong>NT$ 18,348,000</strong></p>
+        <p>AI辅助开发节省: <strong>约60%成本 (NT$ 27,530,000)</strong></p>
+    </div>
+</body>
+</html>
