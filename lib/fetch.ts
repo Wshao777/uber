@@ -38,3 +38,17 @@ export const useFetch = <T>(url: string, options?: RequestInit) => {
 
   return { data, loading, error, refetch: fetchData };
 };
+
+export const createRide = async (rideData: any) => {
+  return await fetchAPI("/api/ride/create", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(rideData),
+  });
+};
+
+export const getGoddess = async () => {
+  return await fetchAPI("/api/dispatch");
+};
