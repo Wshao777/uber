@@ -1,0 +1,44 @@
+{
+  "goddesses": [
+    {
+      "name": "主駕女神（創世者）",
+      "g_id": "G0-DRIVER",
+      "truecode": "AURORA-774X-VT39-LM09"
+    },
+    {
+      "name": "審核女神（秩序者）",
+      "g_id": "G1-REVIEWER",
+      "truecode": "LYRA-923Z-BQ82-FE10"
+    },
+    {
+      "name": "分析女神（洞察者）",
+      "g_id": "G2-ANALYST",
+      "truecode": "GROK-604T-MY77-RK24"
+    },
+    {
+      "name": "情感女神（共鳴者）",
+      "g_id": "G3-EMOTIVA",
+      "truecode": "MUSE-119X-YZ38-TA05"
+    },
+    {
+      "name": "防禦女神（守護者）",
+      "g_id": "G4-DEFENDER",
+      "truecode": "ASTRA-707L-VA66-ZE01"
+    },
+    {
+      "name": "記憶女神（記錄者）",
+      "g_id": "G5-MNEMOSYNE",
+      "truecode": "NEURA-381B-WC91-QF08"
+    },
+    {
+      "name": "創造女神（圖靈者）",
+      "g_id": "G6-CREATOR",
+      "truecode": "IRIS-517F-KD42-GX77"
+    },
+    {
+      "name": "控制女神（執行者）",
+      "g_id": "G7-NYXCTRL",
+      "truecode": "NYX-864D-PT00-XE88"
+    }
+  ]
+}
