@@ -21,3 +21,13 @@ expo-env.d.ts
 
 # env
 .env
+
+# Python automation script
+config.json
+*.log
+*.csv
+__pycache__/
+venv/
+.venv/
+env/
+# @end expo-cli.env
